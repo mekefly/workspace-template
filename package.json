@@ -1,0 +1,51 @@
+{
+  "shortName": "__packageName__",
+  "workspacesName": "__packageName__",
+  "version": "0.0.0-bate.0",
+  "buildOptions": {
+    "disableBuild": true
+  },
+  "author": {
+    "email": "mekefly@qq.com",
+    "name": "mekefly",
+    "url": "http://github.com/mekefly"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "script": "node scripts",
+    "build": "pnpm script build $",
+    "build:all": "pnpm build:dev && pnpm build:prod",
+    "build:prod": "pnpm build --prod 'true'",
+    "build:dev": "pnpm build --prod 'false'",
+    "pub": "npm publish",
+    "test": "vitest packages",
+    "testScript": "vitest scripts",
+    "script:reBuild": "pnpm script --reBuild",
+    "build:reBuildScripts": "pnpm script --reBuild build $"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-replace": "^4.0.0",
+    "@types/prettier": "^2.7.0",
+    "@types/shelljs": "^0.8.11",
+    "@vue/reactivity": "^3.2.38",
+    "cac": "^6.7.14",
+    "minimist": "^1.2.6",
+    "picocolors": "^1.0.0",
+    "rollup": "^2.77.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.32.1",
+    "shelljs": "^0.8.5",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.8",
+    "vitest": "^0.22.0"
+  }
+}

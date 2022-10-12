@@ -1,0 +1,1 @@
+{"name":"@__packageName__/pack","version":"0.0.0-bate.0","description":"","types":"dist/types/index.d.ts","scripts":{},"keywords":[],"author":"","license":"MIT","module":"dist/__packageName__-pack.esm.js","main":"dist/__packageName__-pack.cjs.js","unpkg":"dist/__packageName__-pack.iife.js","jsdelivr":"dist/__packageName__-pack.iife.js"}
